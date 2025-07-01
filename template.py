@@ -17,7 +17,6 @@ list_of_files = [
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/entity/config_entity.py",
     f"src/{project_name}/constant/__init__.py",
-    f"src/{project_name}/train.py",
     "config/config.yaml",
     "requirements.txt",
     "params.yaml",

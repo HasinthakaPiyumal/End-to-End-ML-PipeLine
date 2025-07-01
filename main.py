@@ -1,1 +1,3 @@
-# This is an auto-generated file.
+from MLOps import logger
+
+logger.info("Logging is set up successfully.")
