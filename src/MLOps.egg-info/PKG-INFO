@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: MLOps
+Version: 0.0.1
+Summary: End to End ML Pipeline for MLOps
+Home-page: https://github.com/HasinthakaPiyumal/End-to-End-ML-PipeLine
+Author: HasinthakaPiyumal
+Author-email: hasinthakapiyumal@gmail.com
+Project-URL: Bug Tracker, https://github.com/HasinthakaPiyumal/End-to-End-ML-PipeLine/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
+
+# End to End ML Pipeline
+
+## Getting Started
+
+Follow these steps to set up and run the project:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/HasinthakaPiyumal/End-to-End-ML-PipeLine
+cd 'End to End ML PipeLine'
+```
+
+### 2. Create and Activate Conda Environment
+
+```bash
+conda create -n mlops python=3.11 -y
+conda activate mlops
+```
+
+### 3. Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+---
+
+You are now ready to use the End to End ML Pipeline!
