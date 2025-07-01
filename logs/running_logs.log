@@ -1,1 +1,31 @@
 2025-07-01 18:41:05,659 - MLOpsLogger - INFO - Logging is set up successfully.
+2025-07-02 01:07:17,776 - MLOpsLogger - INFO - Downloading file from https://github.com/HasinthakaPiyumal/End-to-End-ML-PipeLine/raw/refs/heads/main/wine-data.zip to artifacts/data_ingestion/data.zip
+2025-07-02 01:12:23,611 - MLOpsLogger - INFO - File already exists at artifacts/data_ingestion/data.zip
+2025-07-02 01:12:23,613 - MLOpsLogger - INFO - Unzip directory already exists at artifacts/data_ingestion
+2025-07-02 01:12:49,021 - MLOpsLogger - INFO - File already exists at artifacts/data_ingestion/data.zip
+2025-07-02 01:12:49,023 - MLOpsLogger - INFO - Extracting zip file to artifacts/data_ingestion
+2025-07-02 01:12:49,036 - MLOpsLogger - INFO - Extraction completed
+2025-07-02 01:26:37,531 - MLOpsLogger - INFO - >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<
+2025-07-02 01:26:37,545 - MLOpsLogger - ERROR - name 'create_directories' is not defined
+Traceback (most recent call last):
+  File "D:\Programming\MachineLearning\MLOPs\End to End ML PipeLine\main.py", line 7, in <module>
+    data_ingestion_pipeline = DataIngestionPipeline()
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\programming\machinelearning\mlops\end to end ml pipeline\src\MLOps\pipeline\stage_01_data_ingestion.py", line 8, in __init__
+    self.data_ingestion = DataIngestion(config=self.data_ingestion_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\programming\machinelearning\mlops\end to end ml pipeline\src\MLOps\components\data_ingestion.py", line 11, in __init__
+    create_directories([self.config.root_dir])
+    ^^^^^^^^^^^^^^^^^^
+NameError: name 'create_directories' is not defined
+2025-07-02 01:27:11,361 - MLOpsLogger - INFO - >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<
+2025-07-02 01:27:11,373 - MLOpsLogger - INFO - Downloading file from https://github.com/HasinthakaPiyumal/End-to-End-ML-PipeLine/raw/refs/heads/main/wine-data.zip to artifacts/data_ingestion/data.zip
+2025-07-02 01:27:14,260 - MLOpsLogger - INFO - Downloaded 25.56 KB bytes
+2025-07-02 01:27:14,260 - MLOpsLogger - INFO - Extracting zip file to artifacts/data_ingestion
+2025-07-02 01:27:14,320 - MLOpsLogger - INFO - Extraction completed
+2025-07-02 01:27:14,320 - MLOpsLogger - INFO - >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+2025-07-02 01:27:50,796 - MLOpsLogger - INFO - >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<
+2025-07-02 01:27:50,809 - MLOpsLogger - INFO - File already exists at artifacts/data_ingestion/data.zip
+2025-07-02 01:27:50,809 - MLOpsLogger - INFO - Extracting zip file to artifacts/data_ingestion
+2025-07-02 01:27:50,815 - MLOpsLogger - INFO - Extraction completed
+2025-07-02 01:27:50,816 - MLOpsLogger - INFO - >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<

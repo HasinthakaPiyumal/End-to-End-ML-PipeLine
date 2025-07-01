@@ -74,7 +74,7 @@ def load_json(path_to_json: Path) -> Dict[str, Any]:
                                  e.doc, e.pos)
 
 
-@ensure_annotations
+# @ensure_annotations
 def create_directory(path_to_directory: Union[Path, str], verbose: bool = True) -> None:
     """
     Create directory if it doesn't exist.
@@ -191,7 +191,7 @@ def load_bin(path_to_bin: Path) -> Any:
 
 
 @ensure_annotations
-def get_size(path: Path) -> str:
+def get_size(path: Union[str|Path]) -> str:
     """
     Get size of file or directory in human-readable format.
     
@@ -211,6 +211,7 @@ def get_size(path: Path) -> str:
         >>> dir_size = get_size(Path("artifacts/"))
         >>> print(f"Artifacts directory size: {dir_size}")
     """
+    path = Path(path)
     if not path.exists():
         raise FileNotFoundError(f"Path not found: {path}")
     
@@ -253,7 +254,7 @@ def get_file_extension(file_path: Path) -> str:
     return file_path.suffix.lstrip('.')
 
 
-@ensure_annotations
+# @ensure_annotations
 def create_directories(list_of_directories: List[Union[Path, str]], verbose: bool = True) -> None:
     """
     Create multiple directories at once.
@@ -266,5 +267,6 @@ def create_directories(list_of_directories: List[Union[Path, str]], verbose: boo
         >>> dirs = ["artifacts/data_ingestion", "artifacts/model_training", "logs"]
         >>> create_directories(dirs)
     """
+    print('Creating files')
     for directory in list_of_directories:
         create_directory(directory, verbose=verbose)
